@@ -7,3 +7,4 @@ Display current directory contents, including hidden files (starting with .). Us
  Display current directory contents.
  script that creates a new directory
  moving my_fist_directory to betty
+deleting the  betty file
