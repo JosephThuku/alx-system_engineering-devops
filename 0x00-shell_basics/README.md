@@ -6,3 +6,4 @@ Script that takes the user to the home directory
 Display current directory contents, including hidden files (starting with .). Use the long format.
  Display current directory contents.
  script that creates a new directory
+ moving my_fist_directory to betty
