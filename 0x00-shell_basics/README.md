@@ -10,3 +10,4 @@ Display current directory contents, including hidden files (starting with .). Us
 deleting the  betty file
  deleting the my_firts_dir
 moving back
+14-copy_html
