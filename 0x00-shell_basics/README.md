@@ -9,3 +9,4 @@ Display current directory contents, including hidden files (starting with .). Us
  moving my_fist_directory to betty
 deleting the  betty file
  deleting the my_firts_dir
+moving back
