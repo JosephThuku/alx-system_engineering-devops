@@ -3,3 +3,4 @@
 2-hellofile
 3-twofiles
 tail -n 10 /etc/passwd
+added 5-fistlines readig
