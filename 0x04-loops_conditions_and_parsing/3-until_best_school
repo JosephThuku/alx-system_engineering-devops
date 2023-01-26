@@ -3,6 +3,6 @@
 length=0
 until [ $length = 10 ]; do
         echo "Best School"
-        ((i++))
+        ((length++))
 
 done
