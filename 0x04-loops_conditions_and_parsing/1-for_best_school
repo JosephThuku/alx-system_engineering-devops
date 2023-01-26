@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #print best school 10 times
 
 total=10
