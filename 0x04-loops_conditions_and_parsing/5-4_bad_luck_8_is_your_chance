@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+: ' Diplay bad lack for the 4th iteration
+display good lack for the 8th iteration
+display best school for others'
+length=0
+while ((length<10)); do
+        if ((length == 3)); then
+                echo 'bad luck'
+        elif((length == 7)); then
+                echo 'good lack'
+        else
+                echo 'Best School'
+        fi
+        ((length++))
+
+done
