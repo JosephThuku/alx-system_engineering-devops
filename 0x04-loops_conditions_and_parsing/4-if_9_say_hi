@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# while loop for best school
+length=0
+while ((length<10)); do
+        echo 'Best School'
+        if ((length == 8)); then
+                echo 'Hi'
+        fi
+        ((length++))
+
+done
