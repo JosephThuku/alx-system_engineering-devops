@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# diplay minutes, hour, and seconds
+hour=0
+while [ $hour -le 12 ]
+do
+        echo Hour: $hour
+        min=1
+        while [ $min -le 59 ]
+        do
+            echo $min
+            ((min++))
+        done
+        ((hour++))
+done
