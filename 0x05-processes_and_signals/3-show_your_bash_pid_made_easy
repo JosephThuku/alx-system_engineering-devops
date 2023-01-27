@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #display pid and the process name
 
-pgrep -l bash
+pgrep -l bashr
