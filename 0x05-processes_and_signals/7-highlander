@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#I am invisible!!! whn recieving SIGTERM signal
+rec_sig()
+{
+    echo "I am invisible!!!"
+
+}
+trap "rec_sig" SIGTERM
+
+while true
+do
+        echo "To infinity and beyond"
+        sleep 2
+
+done
