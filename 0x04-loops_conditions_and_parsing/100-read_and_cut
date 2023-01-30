@@ -1,0 +1,10 @@
+#!/bin/bash/env bash
+#open the file in read mode
+while IFS=: read -r username __uid__ home;do
+    #Display the recquired info
+    echo "Username: $username"
+    echo "User ID: $__uid__"
+    echo "Home directory: $home"
+    echo ""
+
+done </etc/passwd
