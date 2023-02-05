@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Script to telnet
+
+nc -l localhost 98
