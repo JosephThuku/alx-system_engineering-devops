@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#script to reirect 404 error
+sudo apt-get -y update
+sudo apt install -y nginx
+echo "Ceci n'est pas une page" | sudo tee -a /var/www/html/error404.html
+sudo sed -i '/server_name _;/a\\terror_page 404 /error404.html;' /etc/nginx/sites-available/default
+sudo service nginx restart
