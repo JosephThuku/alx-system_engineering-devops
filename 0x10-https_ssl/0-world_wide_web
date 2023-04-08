@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+#script to display information about subdomains
+domain=$1
+subdomain=$2
+
+get_dns_info() {
+  local sub=$1
+  local record_type=$2
+  local dns_info=$(dig +short $sub.$domain $record_type)
+  echo "The subdomain $sub is a $record_type record and points to $dns_info"
+}
+
+# Display information for default subdomains and specified subdomain
+if [ -n "$subdomain" ]; then
+  get_dns_info $subdomain A
+  get_dns_info $subdomain AAAA
+else
+  get_dns_info www A
+  get_dns_info lb-01 A
+  get_dns_info web-01 A
+  get_dns_info web-02 A
+fi
+
