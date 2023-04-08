@@ -14,7 +14,6 @@ get_dns_info() {
 # Display information for default subdomains and specified subdomain
 if [ -n "$subdomain" ]; then
   get_dns_info $subdomain A
-  get_dns_info $subdomain AAAA
 else
   get_dns_info www A
   get_dns_info lb-01 A
