@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
 #script to display information about subdomains
+
 domain=$1
 subdomain=$2
 
