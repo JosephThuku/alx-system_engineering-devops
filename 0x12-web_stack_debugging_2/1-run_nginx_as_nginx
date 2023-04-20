@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Bash script that configures the container to fit the below requirements
+# nginx must be running as nginx user
+# nginx must be listening on all active IPs on port 8080
+# You cannot use apt-get remove
+
+# Update config file with nginx user
+sudo sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
+
+# Change permissions and user/group ownership
+chmod 700 /etc/nginx/nginx.conf
+chown nginx:nginx /etc/nginx/nginx.conf
+
+# Make sure default file is listening on 8080
+sudo sed -i "s/80 default_server/8080 default_server/" /etc/nginx/sites-available/default
+
+# Since nginx needs to be on port 8080 we need to kill apache2 which was on port 8080 (netstat -lpn)
+pkill apache2
+sudo -u nginx service nginx restart
