@@ -2,5 +2,5 @@
 # script to output the user name 
 #that hase been passed as argument
 
-sudo -u $1 whoami
+sudo -u "$1" whoami
 
